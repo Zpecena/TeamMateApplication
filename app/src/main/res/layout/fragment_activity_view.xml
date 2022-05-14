@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ActivityViewFragment">
+
+
+    <ImageView
+        android:id="@+id/activity_view_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="Image of the venue"
+        android:scaleType="fitStart"
+        tools:src="@tools:sample/backgrounds/scenic" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/activity_view_image"
+        android:layout_alignBottom="@+id/activity_view_image"
+        android:background="@color/corporate_orange_light_transparent">
+
+        <TextView
+            android:id="@+id/activity_sport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:text="Sport name"
+            android:textColor="@color/black"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/activity_venue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_sport"
+            android:layout_marginStart="10sp"
+            android:paddingBottom="5sp"
+            android:text="Venue name"
+            android:textColor="@color/bg_register"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/activity_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_view_image"
+        android:background="@color/dark_grey">
+
+        <TextView
+            android:id="@+id/activity_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5sp"
+            android:padding="2sp"
+            android:text="Activity date"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/activity_type_players"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_date"
+            android:layout_marginStart="5sp"
+            android:padding="2sp"
+            android:text="Activity type of players"
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/activity_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_type_players"
+            android:layout_marginStart="5sp"
+            android:layout_marginBottom="2sp"
+            android:padding="2sp"
+            android:text="Activity price"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/activity_creator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_info"
+        android:layout_marginTop="15sp"
+        android:background="@color/green_material">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/creator_image"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_margin="10sp"
+            android:src="@mipmap/ic_launcher" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="10sp"
+            android:layout_toEndOf="@+id/creator_image">
+
+            <TextView
+                android:id="@+id/creator_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Creator name"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/creator_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/creator_name"
+                android:layout_marginStart="1sp"
+                android:text="Creator phone"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/activity_creator"
+        android:layout_marginTop="15sp">
+
+        <ListView
+            android:id="@+id/activity_list_players"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/activity_signup_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="20sp"
+            android:layout_marginBottom="15sp"
+            android:background="@drawable/button_color_selector"
+            android:text="Sign up!"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

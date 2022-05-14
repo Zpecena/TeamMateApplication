@@ -1,0 +1,2 @@
+include ':app', ':database', ':maps', ':core'
+rootProject.name='TeamMate'

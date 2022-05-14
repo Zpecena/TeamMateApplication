@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "com.cbd.teammate"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    //GP Services location & authentification
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-auth:17.0.0'
+
+
+    //module dependencies
+    implementation project(path: ':database')
+    implementation project(path: ':core')
+    implementation project(path: ':maps')
+
+    // implement FIREBASE
+    implementation 'com.google.firebase:firebase-firestore:21.3.0'
+    implementation 'com.google.firebase:firebase-auth:19.2.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.firebaseui:firebase-ui-firestore:6.1.0'
+    implementation 'com.firebaseui:firebase-ui-database:3.2.2'
+    // menu navbar implementation
+    implementation 'com.google.android.material:material:1.0.0'
+    //coordinatroLayout
+    def coordinatorlayout_version = "1.0.0"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$coordinatorlayout_version"
+
+    //cardView
+    implementation "androidx.cardview:cardview:1.0.0"
+
+    //circleImageview
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+    def recyclerview_version = "1.0.0"
+    // For control over item selection of both touch and mouse driven selection
+    implementation "androidx.recyclerview:recyclerview-selection:$recyclerview_version"
+    //recycler
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    // Algolia Search
+    implementation 'com.algolia:algoliasearch-android:3.+'
+}
+apply plugin: 'com.google.gms.google-services'

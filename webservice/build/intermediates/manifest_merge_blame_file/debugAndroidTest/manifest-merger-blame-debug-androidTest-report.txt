@@ -1,0 +1,130 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cbd.webservice.test" >
+4
+5    <uses-sdk
+5-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:5:5-74
+6        android:minSdkVersion="21"
+6-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:5:15-41
+7        android:targetSdkVersion="29" />
+7-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:5:42-71
+8
+9    <instrumentation
+9-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:11:5-15:73
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:11:22-76
+11        android:functionalTest="false"
+11-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:14:22-52
+12        android:handleProfiling="false"
+12-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:13:22-53
+13        android:label="Tests for com.cbd.webservice.test"
+13-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:15:22-71
+14        android:targetPackage="com.cbd.webservice.test" />
+14-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:12:22-69
+15
+16    <uses-permission android:name="android.permission.REORDER_TASKS" /> <!-- Although the *SdkVersion is captured in gradle build files, this is required for non gradle builds -->
+16-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:24:5-72
+16-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:24:22-69
+17    <!-- <uses-sdk android:minSdkVersion="14" /> -->
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:5-79
+18-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:13:22-76
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:14:5-67
+19-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:14:22-64
+20
+21    <application
+21-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:7:5-9:19
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.1.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/331630a23dfa1f0594bcf54d5352aa36/core-1.1.0/AndroidManifest.xml:24:18-86
+23        android:debuggable="true" >
+23-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:7:18-43
+24        <uses-library android:name="android.test.runner" />
+24-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:8:9-60
+24-->/Users/Ondrej/AndroidStudioProjects/AIR19E1/webservice/build/intermediates/tmp/manifest/androidTest/debug/manifestMerger7873638995327548646.xml:8:23-57
+25
+26        <activity
+26-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:27:9-33:20
+27            android:name="androidx.test.core.app.InstrumentationActivityInvoker$BootstrapActivity"
+27-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:28:13-99
+28            android:theme="@android:style/Theme" >
+28-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:29:13-49
+29            <intent-filter>
+29-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:30:13-32:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:31:17-69
+30-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:31:25-66
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:34:9-40:20
+34            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity"
+34-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:35:13-95
+35            android:theme="@android:style/Theme" >
+35-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:36:13-49
+36            <intent-filter>
+36-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:30:13-32:29
+37                <action android:name="android.intent.action.MAIN" />
+37-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:31:17-69
+37-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:31:25-66
+38            </intent-filter>
+39        </activity>
+40        <activity
+40-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:41:9-47:20
+41            android:name="androidx.test.core.app.InstrumentationActivityInvoker$EmptyFloatingActivity"
+41-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:42:13-103
+42            android:theme="@android:style/Theme.Dialog" >
+42-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:43:13-56
+43            <intent-filter>
+43-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:30:13-32:29
+44                <action android:name="android.intent.action.MAIN" />
+44-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:31:17-69
+44-->[androidx.test:core:1.2.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/26c8d79583766c04868d2250789d5546/core-1.2.0/AndroidManifest.xml:31:25-66
+45            </intent-filter>
+46        </activity>
+47
+48        <service
+48-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:17:9-23:19
+49            android:name="com.google.firebase.components.ComponentDiscoveryService"
+49-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:18:13-84
+50            android:directBootAware="true"
+50-->[com.google.firebase:firebase-common:19.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/880eb5805071b224a796d3300212863d/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+51            android:exported="false" >
+51-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:19:13-37
+52            <meta-data
+52-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:20:13-22:85
+53                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+53-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:21:17-111
+54                android:value="com.google.firebase.components.ComponentRegistrar" />
+54-->[com.google.firebase:firebase-firestore:21.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/8914042c78927f89ae010fbb7f9a8edc/jetified-firebase-firestore-21.3.0/AndroidManifest.xml:22:17-82
+55        </service>
+56
+57        <activity
+57-->[com.google.android.gms:play-services-base:17.0.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/b989d78505a527364775fcd163b70614/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+58            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+58-->[com.google.android.gms:play-services-base:17.0.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/b989d78505a527364775fcd163b70614/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+59            android:exported="false"
+59-->[com.google.android.gms:play-services-base:17.0.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/b989d78505a527364775fcd163b70614/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+60            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+60-->[com.google.android.gms:play-services-base:17.0.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/b989d78505a527364775fcd163b70614/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+61
+62        <provider
+62-->[com.google.firebase:firebase-common:19.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/880eb5805071b224a796d3300212863d/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+63            android:name="com.google.firebase.provider.FirebaseInitProvider"
+63-->[com.google.firebase:firebase-common:19.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/880eb5805071b224a796d3300212863d/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+64            android:authorities="com.cbd.webservice.test.firebaseinitprovider"
+64-->[com.google.firebase:firebase-common:19.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/880eb5805071b224a796d3300212863d/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+65            android:exported="false"
+65-->[com.google.firebase:firebase-common:19.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/880eb5805071b224a796d3300212863d/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+66            android:initOrder="100" />
+66-->[com.google.firebase:firebase-common:19.3.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/880eb5805071b224a796d3300212863d/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
+67
+68        <meta-data
+68-->[com.google.android.gms:play-services-basement:17.0.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/2622b14f09efe043c112fd940232de4e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+69            android:name="com.google.android.gms.version"
+69-->[com.google.android.gms:play-services-basement:17.0.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/2622b14f09efe043c112fd940232de4e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+70            android:value="@integer/google_play_services_version" />
+70-->[com.google.android.gms:play-services-basement:17.0.0] /Users/Ondrej/.gradle/caches/transforms-2/files-2.1/2622b14f09efe043c112fd940232de4e/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+71    </application>
+72
+73</manifest>

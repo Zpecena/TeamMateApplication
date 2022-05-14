@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.NewActivityFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/activity_data_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp">
+
+                <EditText
+                    android:id="@+id/new_activity_sport_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:autofillHints="Sport played in the activity"
+                    android:hint="Sport"
+                    android:inputType="text"
+                    android:textColorHighlight="@color/corporate_orange"
+                    android:textColorHint="@color/corporate_orange" />
+
+                <LinearLayout
+                    android:id="@+id/date_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/new_activity_sport_value"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp">
+
+                    <TextView
+                        android:id="@+id/new_activity_date_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Date"
+                        android:textColor="@color/corporate_orange"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/new_activity_date_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:autofillHints="Price of the activity"
+                        android:gravity="center_horizontal"
+                        android:hint="dd/MM/yyyy hh:mm"
+                        android:inputType="datetime"
+                        android:textColorHighlight="@color/corporate_orange"
+                        android:textColorHint="@color/corporate_orange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/type_block"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/date_block"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp">
+
+                    <TextView
+                        android:id="@+id/new_activity_type_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="Skill level"
+                        android:textColor="@color/corporate_orange"
+                        android:textSize="20sp" />
+
+                    <Spinner
+                        android:id="@+id/new_activity_type_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:entries="@array/player_levels" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/new_activity_nun_players_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/type_block"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:autofillHints="Maximum number of players"
+                    android:hint="Number of players"
+                    android:inputType="number"
+                    android:textColorHighlight="@color/corporate_orange"
+                    android:textColorHint="@color/corporate_orange" />
+
+                <EditText
+                    android:id="@+id/new_activity_price_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/new_activity_nun_players_value"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:autofillHints="Price of the activity"
+                    android:hint="Price"
+                    android:inputType="numberDecimal"
+                    android:textColorHighlight="@color/corporate_orange"
+                    android:textColorHint="@color/corporate_orange" />
+
+                <EditText
+                    android:id="@+id/new_activity_desc_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/new_activity_price_value"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="40dp"
+                    android:autofillHints="Description of the activity"
+                    android:hint="Description"
+                    android:inputType="text"
+                    android:textColorHighlight="@color/corporate_orange"
+                    android:textColorHint="@color/corporate_orange" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/activity_data_input"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp">
+
+                <Button
+                    android:id="@+id/add_new_activity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/corporate_orange"
+                    android:paddingStart="15dp"
+                    android:paddingEnd="15dp"
+                    android:text="Create new activity"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="2sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/venueImage"
+        android:layout_centerVertical="true"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@+id/venueImage"
+        android:padding="15sp">
+
+        <TextView
+            android:id="@+id/search_venue_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Julija Merlica, 9"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/search_distance_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_venue_name"
+            android:text="Distance: " />
+
+        <TextView
+            android:id="@+id/search_distance_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/search_venue_name"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/search_distance_label"
+            android:text="infinity" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

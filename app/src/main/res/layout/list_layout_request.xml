@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="2sp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:src="@mipmap/ic_launcher" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profileImage"
+        android:text="Sports Date:"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/activityRequestDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:text="Date"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/profileImage"
+        android:padding="15sp">
+
+        <TextView
+            android:id="@+id/activityRequestSport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sport"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/requesterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name Surname"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_below="@+id/activityRequestSport"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/requestLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/requesterName"
+            android:text="level"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/requestDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/requestLevel"
+            android:layout_alignParentEnd="false"
+            android:text="Description"
+            android:layout_marginTop="5dp"/>
+
+    </RelativeLayout>
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:layout_toLeftOf="@+id/decline"
+        android:text="Accept"
+        android:layout_marginTop="5dp"/>
+    <Button
+        android:id="@+id/decline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative1"
+        android:layout_alignParentEnd="true"
+        android:text="Decline"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>
