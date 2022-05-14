@@ -14,7 +14,6 @@
     <string name="password">Password</string>
     <string name="confirm_password">Password confirmation</string>
     <string name="username">Username</string>
-    <string name="g_maps_api_key">AIzaSyA5SObTwWEGnFkubedir0EkJu40WGwDAzo</string>
     <string-array name="player_levels">
         <item>Amateur</item>
         <item>Experienced</item>
